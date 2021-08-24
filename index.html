@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                             
+    <script defer src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="countdown-modal">
+        <p class="countdown"></p>
+        <span>Start typing as soon as the countdown is over.<br>Press <kbd>ENTER</kbd> when you finish.</span>
+    </div>
+
+    <div class="logo-name">
+        <span class="hamburgers ham-1"></span>
+        <span class="hamburgers ham-2"></span>
+        <span class="hamburgers ham-3"></span>
+    </div>
+
+    <main class="my-main">
+        <aside class="side-bar">
+            <ul class="side-bar__list">
+                <li class="side-bar__item">
+                    <span>Go Short</span>
+                    <ul class="side-bar__inner-list">
+                        <li data-id = '1' class="side-bar__inner-item">The woodchuck</li>
+                        <li data-id = '2' class="side-bar__inner-item">Fuzzy Wuzzy</li>
+                        <li data-id = '3' class="side-bar__inner-item">Date at the gate</li>
+                    </ul>
+                </li>
+
+                <li class="side-bar__item">
+                    <span>Go Medium</span>
+                    <ul class="side-bar__inner-list">
+                        <li data-id = '4' class="side-bar__inner-item">Horror of the tutrle</li>
+                        <li data-id = '5' class="side-bar__inner-item">The scientist</li>
+                        <li data-id = '6' class="side-bar__inner-item">Fun with mom</li>
+                    </ul>
+                </li>
+
+                <li class="side-bar__item">
+                    <span>Go Long</span>
+                    <ul class="side-bar__inner-list">
+                        <li data-id = '7' class="side-bar__inner-item">Aliens</li>
+                        <li data-id = '8' class="side-bar__inner-item">A true fan</li>
+                        <li data-id = '9' class="side-bar__inner-item">Long distance romance</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="copy">
+                &copy; Copyrights to Arbel Ziskind
+            </div>
+        </aside>
+
+        <div class="content-container">
+            
+            <div class="bg-video">
+                <video loop muted autoplay src="video/Typing.mp4"></video>
+            </div>
+
+            <div class="content">
+                <div class="time-boxes">
+                    <div class="best-time-display">
+                        <svg class="icon-clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.408 18c.498-3.947 5.592-7.197 5.592-17h-14c0 9.803 5.105 13.053 5.604 17h2.804zm-3.614-11.472l1.46-.202.643-1.326.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783-4.065-1.348-6.501-5.334-6.873-9.439h4.077c.036.482.08.955.139 1.405h-2.689c.427 2.001 1.549 4.729 4.464 6.251zm10.009 10.963v1.381h-8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zm8-18.619c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405h4.076z"/></svg>
+                        <span>Best Time: <span id="best-time"></span></span>
+                    </div>
+                    <div class="clock">00:00:00</div>
+                </div>
+
+                <div class="output-flip">
+                    <div class="text-to-type">
+                        <p>Open the sidebar and chose text in order to START</p>
+                    </div> 
+
+                    <div class="game-stats">
+                        <table>
+                            <tr>
+                                <td>🏁 Who was faster? <span id="who-faster"></span></td>
+                                <td>🏃‍♀️ Words Per Minute: <span id="words-per-minute"></span></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>❌ Words With Errors: <span id="words-with-errors"></span></td>
+                                <td>❌ Words Missing: <span id="words-missing"></span></td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="competitors-text-boxes">
+                    <div class="competitors">
+                        <div class="competitors-section">
+                            <h1 class="competitors-name">AI</h1>
+                            <span class="winner-indicator" id="ai"></span>
+                        </div>
+                    
+                        <div class="computer-type">
+                            <p class="computer-input" style="width: 100%;"></p>
+                        </div>
+                    </div>
+    
+                    <div class="competitors user-field">
+                        <div class="competitors-section">
+                            <h1 class="competitors-name">YOU</h1>
+                            <span class="winner-indicator" id="user"></span>
+                        </div>
+                        
+                        <textarea class="user-input"></textarea>
+                    </div>
+                </div>
+        
+                <div class="buttons">
+                    <div class="start-stop-reset">
+                        <svg class="play">
+                            <use xlink:href="img/sprite.svg#icon-play2"></use>
+                        </svg>
+                        <svg class="restart">
+                            <use xlink:href="img/sprite.svg#icon-replay"></use>
+                        </svg>              
+                    </div>
+    
+                    <div class="speed-btn">
+                        <svg class="speed speed-down">
+                            <use class="speed-down" xlink:href="img/sprite.svg#icon-circle-with-minus"></use>
+                        </svg>
+    
+                        <span class="current-speed">1x</span>
+    
+                        <svg class="speed speed-up">
+                            <use class="speed-up" xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
+                        </svg>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
