@@ -347,6 +347,8 @@ html{
 .text-to-type{          /* FRONT  */
     box-shadow: 0 .75rem 3rem rgba(0, 0, 0, 0.466);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     position: absolute;
     width: 100%;
     min-height: 100%;
@@ -368,6 +370,8 @@ html{
     height: 100%;
     transform: rotateX(180deg);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     transition: transform 1s;
     display: flex;
     justify-content: center;
