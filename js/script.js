@@ -38,7 +38,7 @@ let isGameOver = false;
 let currentTextPlayedID = 0;
 let outputComputerString;
 
-const MAX_RUNNING_CLOCK = 5000;
+const MAX_RUNNING_CLOCK = 15000;
 
 
 const textObj = {
