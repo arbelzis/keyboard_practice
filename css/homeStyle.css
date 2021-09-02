@@ -295,7 +295,9 @@ html{
 }
 
 .content >* {
-
+    perspective: 700px;
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
 }
 
 .time-boxes{
