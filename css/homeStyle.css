@@ -290,6 +290,8 @@ html{
     flex-direction: column;
     margin-top: 6rem;
     perspective: 700px;
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
 }
 
 .content >* {
